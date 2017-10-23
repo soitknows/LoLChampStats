@@ -95,12 +95,18 @@ $(document).ready(function () {
     var patch_url = "https://ddragon.leagueoflegends.com/api/versions.json";
     $.getJSON(patch_url, function(resp){
         for (var i = 0; i < resp.length; i+= 1) {
-           if (!resp[i].includes("lolpatch")) { 
-                $("#patches").append($("<option>",{
-                    value: resp[i],
-                    text: resp[i]
-                }))
-           };   
+           // if (!resp[i].includes("lolpatch")) { 
+           //      $("#patches").append($("<option>",{
+           //          value: resp[i],
+           //          text: resp[i]
+           //      }))
+           // }; 
+
+           // Testing
+            $("#patches").append($("<option>",{
+                value: resp[i],
+                text: resp[i]
+            }));
         };
     });
 
