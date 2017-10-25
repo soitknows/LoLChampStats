@@ -48,7 +48,6 @@
 
         patches.forEach( function(item) {
             var url = url_beg + item + url_end;
-
             $.getJSON(url, function(resp) {
                 var data = resp.data;
                 // Get champion list.   
@@ -84,11 +83,11 @@
                         "spellblock": data[champs[i]].stats.spellblock,
                         "spellblockperlevel": data[champs[i]].stats.spellblockperlevel
                     });
-                }   
+                } 
                 table.appendRows(tableData);
-                doneCallback();
             });
         });
+        doneCallback();
     };
 
     tableau.registerConnector(myConnector);
