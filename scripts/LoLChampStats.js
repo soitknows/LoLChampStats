@@ -84,8 +84,9 @@
                         "spellblockperlevel": data[champs[i]].stats.spellblockperlevel
                     });
                 } 
-                table.appendRows(tableData);
+                
             });
+            table.appendRows(tableData);
         });
         doneCallback();
     };
