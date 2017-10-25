@@ -45,8 +45,9 @@
             tableData = [];
 
         var patches = JSON.parse(tableau.connectionData).patches;
+        var count = patches.length;
 
-        patches.forEach( function(item) {
+        patches = patches.map( function(item) {
             var url = url_beg + item + url_end;
             $.getJSON(url, function(resp) {
                 var data = resp.data;
@@ -83,11 +84,19 @@
                         "spellblock": data[champs[i]].stats.spellblock,
                         "spellblockperlevel": data[champs[i]].stats.spellblockperlevel
                     });
-                } 
-                table.appendRows(tableData);
+                }
+                next();
             });
-            
         });
+
+        function next(){
+            count--
+            if(count < 1){
+                table.appendRows(tableData);
+            };
+        };
+
+
         doneCallback();
     };
 
