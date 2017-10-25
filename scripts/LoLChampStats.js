@@ -33,11 +33,10 @@
             id: "LoLChampFeed",
             alias: "League of Legends - Static Champion Stats",
             columns: cols
-    };
+        };
 
-    schemaCallback([tableSchema]);
+        schemaCallback([tableSchema]);
     };
-
 
     myConnector.getData = function(table, doneCallback) {
         var url_beg = "http://ddragon.leagueoflegends.com/cdn/",
@@ -88,18 +87,16 @@
                 next();
             });
         });
-
+        
+        // Wait until all patches have been loaded before appending data.
         function next(){
             count--
             if(count < 1){
                 table.appendRows(tableData);
+                doneCallback();
             };
-        };
-
-
-        doneCallback();
+        }; 
     };
-
     tableau.registerConnector(myConnector);
 })();
 
