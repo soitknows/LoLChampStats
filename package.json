@@ -1,0 +1,22 @@
+{
+  "name": "lolchampstats",
+  "version": "1.0.0",
+  "description": "## Summary",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soitknows/LoLChampStats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soitknows/LoLChampStats/issues"
+  },
+  "homepage": "https://github.com/soitknows/LoLChampStats#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
