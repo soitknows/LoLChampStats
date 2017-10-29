@@ -2,7 +2,7 @@
 
 ## Summary
 
-This is a basic Web Data Connector for use with Tableau Public that connects to Riot Games' Data Dragon API. It returns static League of Legends champion data for all champions, for the patch version(s) specified. 
+This is a basic Web Data Connector for use with Tableau Public that connects to Riot Games' Data Dragon API. It returns static League of Legends champion data for all champions, for the patch version(s) specified.
 
 Currently includes the following base champion statistics...
 
@@ -32,6 +32,13 @@ Currently includes the following base champion statistics...
 - Magic Resist
 - Magic Resist per Level
 
+## Development Server
+
+* make sure you have nodejs installed on your machine
+* run `npm install` in the directory to have express installed
+* run `npm run start` to start the express server
+* navigate to http://localhost:8080
+
 ## References
 
 [Tableau Public](https://public.tableau.com/en-us/s/)
@@ -41,7 +48,3 @@ Currently includes the following base champion statistics...
 [Riot Games - League of Legends](http://na.leagueoflegends.com)
 
 [Riot Games - Data Dragon](https://developer.riotgames.com/static-data.html)
-
-
-
-
