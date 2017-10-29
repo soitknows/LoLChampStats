@@ -14,7 +14,7 @@
                     { id: "attackdamageperlevel", dataType: tableau.dataTypeEnum.float, alias: "Attack Damage per Level" },
                     { id: "attackrange", dataType: tableau.dataTypeEnum.float, alias: "Attack Range" },
                     { id: "attackspeedoffset", dataType: tableau.dataTypeEnum.float, alias: "Attack Speed Offset" },
-                    { id: "attackspeedperlevel", dataType: tableau.dataTypeEnum.float, alias: "Attack Spped per Level" },
+                    { id: "attackspeedperlevel", dataType: tableau.dataTypeEnum.float, alias: "Attack Speed per Level" },
                     { id: "crit", dataType: tableau.dataTypeEnum.float, alias: "Critical Strike" },
                     { id: "critperlevel", dataType: tableau.dataTypeEnum.float, alias: "Critical Strike per Level" },
                     { id: "hp", dataType: tableau.dataTypeEnum.float, alias: "Health" },
